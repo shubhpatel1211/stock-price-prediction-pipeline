@@ -1,0 +1,41 @@
+# Virtual environment
+
+.venv/
+
+# Python cache
+
+**pycache**/
+*.pyc
+
+# Pytest cache
+
+.pytest_cache/
+
+# Notebook checkpoints
+
+.ipynb_checkpoints/
+
+# Generated datasets
+
+data/raw/*.csv
+data/processed/*.csv
+
+# Trained models
+
+models/*.pkl
+
+# Generated plots
+
+assets/generated/*.png
+
+# Keep folder structure visible
+
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!models/.gitkeep
+!assets/generated/.gitkeep
+
+# OS files
+
+.DS_Store
+Thumbs.db
