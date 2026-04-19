@@ -189,6 +189,66 @@ assets/generated/nflx_prediction.png
 ```
 
 ---
+# 📊 Example Output
+
+### Training Example
+
+```bash
+python main.py --mode train --ticker NFLX
+```
+
+Output:
+
+```
+Training complete for NFLX.
+Raw data saved to: data/raw/NFLX_stock_data.csv
+Processed features saved to: data/processed/NFLX_features.csv
+Model saved to: models/NFLX_model.pkl
+Plot saved to: assets/generated/nflx_prediction.png
+
+Model metrics (price space):
+  mae: 1.3594
+  mse: 3.9765
+  rmse: 1.9941
+  r2: 0.9922
+
+Baseline metrics (predict next close = current close):
+  mae: 1.2825
+  mse: 3.6703
+  rmse: 1.9158
+  r2: 0.9928
+```
+
+---
+
+### Prediction Example
+
+```bash
+python main.py --mode predict --ticker NFLX
+```
+
+Output:
+
+```
+Latest feature date: 2026-04-16
+Using model: models/NFLX_model.pkl
+Updated raw data file: data/raw/NFLX_stock_data.csv
+Updated processed features file: data/processed/NFLX_features.csv
+Latest known close for NFLX: 107.79
+Predicted next-day return for NFLX: -0.8589%
+Predicted next closing price for NFLX: 106.86
+Most recent known next close in dataset: 97.31
+```
+
+---
+
+### Prediction Visualization
+
+Example model prediction vs actual closing price:
+
+![Prediction Example](assets/generated/nflx_prediction.png)
+
+---
 
 # ⚙️ Configuration
 
