@@ -15,25 +15,9 @@
 
 .ipynb_checkpoints/
 
-# Generated datasets
-
-data/raw/*.csv
-data/processed/*.csv
-
-# Trained models
+# Hide trained models
 
 models/*.pkl
-
-# Generated plots
-
-assets/generated/*.png
-
-# Keep folder structure visible
-
-!data/raw/.gitkeep
-!data/processed/.gitkeep
-!models/.gitkeep
-!assets/generated/.gitkeep
 
 # OS files
 
